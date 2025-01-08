@@ -7,8 +7,8 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        {{-- <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" /> --}}
 
         <!-- Styles / Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
@@ -19,31 +19,64 @@
             </style>
         @endif
         <style>
-            .heroCard{
-                background: url('public/img/restaurant.jpg')
-            }
+            /* .heroCard{
+                background: url("https://drive.google.com/drive/u/0/folders/1XuRm6qDIAw1jTqVD6CxHziTb4ks0WrzM") center no-repeat;
+
+            } */
         </style>
     </head>
-    <body >
+    <body style="font-family:Arial, Helvetica, sans-serif" >
+        {{-- Navbar --}}
         <header class="navbar-container w-auto flex justify-center p-2 bg-gradient-to-r  from-blue-600 via-blue-700 to-blue-500 text-white">
-            <nav class="navbar text-xl flex justify-between w-[100%] px-10">
-                <a href="#HOME">Logo</a>
-                <div class=" flex gap-7 ">
-                    <a href="" class="title">Home</a>
-                    <a href="" class="title">Blogpost</a>
-                    <a href="" class="title">Shop</a>
-                </div>
-                <button type="button" class="p-2 ">Login</button>
-            </nav>
-        </header>
+            <x-Navbar />
 
-        <section class="heroCard w-auto ">
-            <div class="heroCard w-auto text-lg text-center h-[40rem] relative" style="background: url('public/img/restaurant.jpg'); background-size: cover;">
-                <div class="items-center justify-center flex flex-col h-full text-2xl font-bold">
-                    <p class="text-white">Welcome To Waroeng Kabita!</p>
-                    <p class="text-white">Bukan anak IPB kalo belum makan disini!</p>
+        </header>
+        <main class="grid grid-cols-1 gap-14">
+            {{-- Hero Card --}}
+            <section class="container-hero w-auto ">
+                <div class="heroCard w-auto text-lg text-center h-[40rem] relative bg-cover" style="background-image: url('{{asset('img/KabitaHero.jpg')}}');">
+                    <div class="items-center justify-center flex flex-col h-full text-2xl font-bold bg-black bg-opacity-50">
+                        <p class="text-white text-3xl">Welcome To Waroeng Kabita!</p>
+                        <p class="text-white text-3xl">Bukan anak IPB kalo belum makan disini!</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            {{-- Profile --}}
+            <section class="container-profile w-auto">
+                <div class="container w-auto flex justify-between">
+                    <div class="img-profile h-[26rem] w-[40%]  relative bg-cover" style="background-image: url('{{asset('img/restoranSunda.jpg')}}');">
+                    </div>
+                    <div class="text w-[50%] ">
+                        <p class=" text-4xl font-bold">
+                            Waroeng Kabita
+                        </p>
+                        <p class="desc text-lg mt-3 text-justify">
+                            Kedai Warung Kabita merupakan kedai warung makan sunda yang memiliki harga yang sangat murah
+                            sehingga sudah menjadi langganan untuk para mahasiswa vokasi IPB, anak kos, serta
+                            pengunjung-pengunjung yang menginginkan makan enak dengan harga yang terjangkau. Kedai warung
+                            kabita
+                            sendiri sudah ter-standarisasi dengan sertifikat halal oleh sebab itu para konsumen tidak perlu
+                            mengkhawatirkan masalah halal, bersih, dan kenyamanan.
+                            <br>
+                            <br>
+                            Kedai warung kabita sendiri sudah berdiri dari tahun 1998, sehingga sudah tidak heran jika anak
+                            IPB
+                            tahu kedai warung ini. Sebab dari angkatan per angkatan, mereka sudah memasarkan kedai warung
+                            ini.
+                            Warung Kedai Kabita sudah banyak mengalami perpindahan lahan, hingga terakhir bertetap di Jl.
+                            Lodaya
+                            2 hingga saat ini.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {{-- Best Seller --}}
+            <section class="container-best">
+                
+            </section>
+        </main>
+       
     </body>
 </html>
