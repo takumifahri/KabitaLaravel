@@ -45,13 +45,13 @@
             {{-- Profile --}}
             <section class="container-profile w-auto">
                 <div class="container w-auto flex justify-between">
-                    <div class="img-profile h-[26rem] w-[40%]  relative bg-cover" style="background-image: url('{{asset('img/restoranSunda.jpg')}}');">
+                    <div class="img-profile h-[21rem] w-[40%]  relative bg-cover" style="background-image: url('{{asset('img/IMG_4984.JPG')}}');">
                     </div>
-                    <div class="text w-[50%] ">
-                        <p class=" text-4xl font-bold">
+                    <div class="text w-[55%] ">
+                        <p class=" text-3xl font-bold">
                             Waroeng Kabita
                         </p>
-                        <p class="desc text-lg mt-3 text-justify">
+                        <p class="desc text-lg leading-normal mt-2 text-justify">
                             Kedai Warung Kabita merupakan kedai warung makan sunda yang memiliki harga yang sangat murah
                             sehingga sudah menjadi langganan untuk para mahasiswa vokasi IPB, anak kos, serta
                             pengunjung-pengunjung yang menginginkan makan enak dengan harga yang terjangkau. Kedai warung
@@ -74,7 +74,17 @@
 
             {{-- Best Seller --}}
             <section class="container-best">
-                
+                <div class="container">
+                    <p class="title text-3xl font-bold">
+                        Best Seller
+                    </p>
+                    <div class="list-makanan-best flex justify-between">
+                        <img src="https://images.deliveryhero.io/image/fd-my/LH/baj4-hero.jpg" alt="Ayam Goreng" class="photo w-[15%] h-[15rem]">
+                        <img src="https://images.deliveryhero.io/image/fd-my/LH/baj4-hero.jpg" alt="" class="photo w-[15%] h-[15rem]">
+                        <img src="https://images.deliveryhero.io/image/fd-my/LH/baj4-hero.jpg" alt="" class="photo w-[15%] h-[15rem]">
+                        <img src="https://images.deliveryhero.io/image/fd-my/LH/baj4-hero.jpg" alt="" class="photo w-[15%] h-[15rem]">
+                    </div>
+                </div>
             </section>
         </main>
        
