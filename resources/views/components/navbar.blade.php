@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav class="navbar text-xl flex justify-between w-[100%] px-10">
-        <a href="#HOME" class="text-2xl font-bold">KABITA</a>
+        <img src="{{asset('img/logo.png')}}" alt="Logo" class="w-[10rem]">
         <div class=" flex gap-7 ">
             <a href="#" class="title">Home</a>
             <a href="{{ route('blog.index') }}" class="title">Blogpost</a>

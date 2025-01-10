@@ -159,18 +159,89 @@
 
             {{-- Menu --}}
             <section class="conatiner-menu">
-                <div class="container w-auto border border-solid grid grid-cols-1 gap-7">
+                <div class="container w-auto grid grid-cols-1 gap-7">
                     <p class="title text-4xl text-center font-bold">
                         Menu
                     </p>
-                    <div class="menu-menu w-auto">
+                    <div class="menu-menu w-auto grid grid-cols-1 gap-7">
                         <div class="nav-menu flex gap-6 justify-center text-xl">
                             <a href="#" class="menu-menu">All</a>
                             <a href="#" class="menu-menu">Makanan</a>
                             <a href="#" class="menu-menu">Minuman</a>
                         </div>
                         <div class="container-1 grid grid-cols-4 gap-6 w-auto ml-4">
-                            @if ($menuItems && count($menuItems) > 0)
+                            <div class="card w-[17rem]">
+                                <div class="card-body ">
+                                    <img src="https://images.deliveryhero.io/image/fd-my/LH/baj4-hero.jpg" alt="Ayam Goreng" class="photo w-[100%] h-[10rem]">
+                                    <div class="text-saja grid gap-1 mt-3">
+                                        <p class="text-center text-lg font-bold">Ayam Goreng</p>
+                                        <p class="price text-center text-lg ">Rp. 10.000</p>                                        
+                                    </div>
+                                    <div class="w-auto flex justify-center mt-2">
+                                        <button class="btn btn-primary" style="width: 50%;" type="button">
+                                            Beli
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card w-[17rem]">
+                                <div class="card-body ">
+                                    <img src="https://images.deliveryhero.io/image/fd-my/LH/baj4-hero.jpg" alt="Ayam Goreng" class="photo w-[100%] h-[10rem]">
+                                    <div class="text-saja grid gap-1 mt-3">
+                                        <p class="text-center text-lg font-bold">Ayam Goreng</p>
+                                        <p class="price text-center text-lg ">Rp. 10.000</p>                                        
+                                    </div>
+                                    <div class="w-auto flex justify-center mt-2">
+                                        <button class="btn btn-primary" style="width: 50%;" type="button">
+                                            Beli
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card w-[17rem]">
+                                <div class="card-body ">
+                                    <img src="https://images.deliveryhero.io/image/fd-my/LH/baj4-hero.jpg" alt="Ayam Goreng" class="photo w-[100%] h-[10rem]">
+                                    <div class="text-saja grid gap-1 mt-3">
+                                        <p class="text-center text-lg font-bold">Ayam Goreng</p>
+                                        <p class="price text-center text-lg ">Rp. 10.000</p>                                        
+                                    </div>
+                                    <div class="w-auto flex justify-center mt-2">
+                                        <button class="btn btn-primary" style="width: 50%;" type="button">
+                                            Beli
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card w-[17rem]">
+                                <div class="card-body ">
+                                    <img src="https://images.deliveryhero.io/image/fd-my/LH/baj4-hero.jpg" alt="Ayam Goreng" class="photo w-[100%] h-[10rem]">
+                                    <div class="text-saja grid gap-1 mt-3">
+                                        <p class="text-center text-lg font-bold">Ayam Goreng</p>
+                                        <p class="price text-center text-lg ">Rp. 10.000</p>                                        
+                                    </div>
+                                    <div class="w-auto flex justify-center mt-2">
+                                        <button class="btn btn-primary" style="width: 50%;" type="button">
+                                            Beli
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card w-[17rem]">
+                                <div class="card-body ">
+                                    <img src="https://images.deliveryhero.io/image/fd-my/LH/baj4-hero.jpg" alt="Ayam Goreng" class="photo w-[100%] h-[10rem]">
+                                    <div class="text-saja grid gap-1 mt-3">
+                                        <p class="text-center text-lg font-bold">Ayam Goreng</p>
+                                        <p class="price text-center text-lg ">Rp. 10.000</p>                                        
+                                    </div>
+                                    <div class="w-auto flex justify-center mt-2">
+                                        <button class="btn btn-primary" style="width: 50%;" type="button">
+                                            Beli
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            {{-- @if ($menuItems && count($menuItems) > 0)
                                 @for ($i = 0; $i < min(10, count($menuItems)); $i++)
                                     <div class="card w-[17rem]">
                                         <div class="card-body ">
@@ -196,9 +267,16 @@
                                 @endif
                             @else
                                 <p class="text-center text-lg">No menu items available.</p>
-                            @endif
+                            @endif --}}
                         </div>
                     </div>
+                </div>
+            </section>
+            
+            {{-- Contact Us --}}
+            <section class="container-contact">
+                <div class="container">
+
                 </div>
             </section>
         </main>
